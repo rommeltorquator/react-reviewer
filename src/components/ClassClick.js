@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
+// EVENT HANDLING on class component
 
-// event handling for class based component
+// add the this keyword on class components for accessing methods, parameters
 class ClassClick extends Component {
     clickHandler() {
-        console.log("Clicked the handler")
+        console.log("Clicked the button");
     }
 
     render() {
         return (
             <div>
-                <button onClick={this.clickHandler}>Click Me, class based</button>
+                <button onClick={this.clickHandler}>Click me</button>
             </div>
         )
     }

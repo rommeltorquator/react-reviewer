@@ -1,5 +1,5 @@
-// class-based components, use of state and setState
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+// SETSTATE topic, callback function is the second parameter on setState to access the updated state, using a function on setState for using previous state
 
 class Counter extends Component {
     constructor(props) {
@@ -10,23 +10,30 @@ class Counter extends Component {
         }
     }
 
+    // when updating a state based on a previous state, pass a function as an argument to setState instead of passing an object, the function has access to previous state which can be used to manipulate the new state
+
+    // callback function is the second parameter
     increment() {
+        // object passed in setState, arrow function on the second parameter for accessing the updated state
         // this.setState({
         //     count: this.state.count + 1
-        // }, () => {console.log('callback value: ', this.state.count)})
+        // }, () => {
+        //     console.log(this.state.count)
+        // })
 
-        // proper use of setState
+        // pass a function instead of an object in setState, if planning to use the previous state, props is the second parameter
         this.setState((prevState, props) => ({
             count: prevState.count + 1
         }))
     }
-
+    
+    // react has a tendency to group multiple setStates into one for performance
     incrementFive() {
-        this.increment()
-        this.increment()
-        this.increment()
-        this.increment()
-        this.increment()
+        this.increment();
+        this.increment();
+        this.increment();
+        this.increment();
+        this.increment();
     }
 
     render() {

@@ -1,21 +1,21 @@
-// class-based components
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+// STATE, setState
 
-class Message extends Component {
-    constructor() {
-        super()
+export class Message extends Component {
+    constructor(props) {
+        super(props)
+    
         this.state = {
-            message: "Welcome Visitor"
+             message: 'Welcome Visitor'
         }
     }
 
     changeMessage() {
         this.setState({
-            message: 'Thank you for subscribing'
+            message: "Thank you for subscribing"
         })
     }
-
-    // arrow function is used for event handling
+    
     render() {
         return (
             <div>

@@ -1,34 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-
-import Greet from './components/Greet';
-import Welcome from './components/Welcome';
-import Hello from './components/Hello';
-import Message from './components/Message';
-import Counter from './components/Counter';
-import FunctionClick from './components/FunctionClick';
-import ClassClick from './components/ClassClick';
-import EventBind from './components/EventBind';
-import ParentComponent from './components/ParentComponent';
-import UserGreeting from './components/UserGreeting';
-import NameList from './components/NameList';
-import Stylesheet from './components/Stylesheets';
-import Inline from './components/Inline';
-
-import './components/appStyles.css';
-import styles from './components/appStyles.module.css';
+import Greet from './components/Greet'; // functional components, props topic, children props, destructuring props
+import Welcome from './components/Welcome' // class components, props topic, destructuring props and state
+import Hello from './components/Hello' // JSX
+import Message from './components/Message'; // state
+import Counter from './components/Counter'; // setState
+import FunctionClick from './components/FunctionClick'; // event handling on function
+import ClassClick from './components/ClassClick'; // event handling on class
+import EventBind from './components/EventBind'; // binding event handlers
+import ParentComponent from './components/ParentComponent'; // methods as props, passing parameter from child to parent component
 
 function App() {
   return (
     <div className="App">
-      <h1 className="error">Error</h1>
-      <h1 className={styles.success}>Success</h1>
-      <Inline />
-      {/* <Stylesheet /> */}
-      {/* <NameList /> */}
-      {/* <UserGreeting /> */}
-
-      {/* <ParentComponent /> */}
+      <ParentComponent />
       {/* <EventBind /> */}
 
       {/* <FunctionClick /> */}
@@ -37,19 +22,21 @@ function App() {
       {/* <Counter /> */}
       {/* <Message /> */}
 
-      {/* <Greet name="Rommel" heroName="Lion">
-        <p>This is a child props inside a function component</p>
+      {/* <Greet name="Rommel" heroName="Batman">
+        <p>This is children props</p>
       </Greet> */}
-      {/* <Greet name="Melo" heroName="Ogre" /> */}
-      {/* <Greet name="Toshi" heroName="Ancient Apparition" /> */}
+      {/* <Greet name="Toshi" heroName="Superman">
+        <button>Press me</button>
+      </Greet> */}
+      {/* <Greet name="Melo" heroName="Spiderman" /> */}
 
-      {/* <Welcome name="Melo" heroName="Ogre" /> */}
-      {/* <Welcome name="Rommel" heroName="Lion" /> */}
+      {/* <Welcome name="Rommel" heroName="Batman" /> */}
+      {/* <Welcome name="Toshi" heroName="Superman" /> */}
+      {/* <Welcome name="Melo" heroName="Spiderman" /> */}
       {/* <Hello /> */}
     </div>
   );
 }
 
 export default App;
-
-// video 21
+// 16

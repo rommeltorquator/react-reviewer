@@ -1,14 +1,15 @@
 import React from 'react'
+// EVENT HANDLING, adding method in a function component, no parenthesis
 
-// event handling for function based component
 function FunctionClick() {
     function clickHandler() {
-        console.log("Button clicked")
+        console.log("Button clicked");
     }
 
+    // no parenthesis on clickHandler inside the onClick to avoid running the function  
     return (
         <div>
-            <button onClick={clickHandler}>Click, function based</button>
+            <button onClick={clickHandler}>Click</button>
         </div>
     )
 }

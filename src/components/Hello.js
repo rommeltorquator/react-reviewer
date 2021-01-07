@@ -1,12 +1,19 @@
 import React from 'react';
+// JSX
 
-// function component using arrow function
 const Hello = () => {
-    return (
-        <div>
-            <h1>Hello Toshiro</h1>
-        </div>
-    )
+    // return (
+    //     <div>
+    //         <h1>This is JSX topic</h1>
+    //     </div>
+    // )
+
+    // no JSX
+    return React.createElement('div', null, React.createElement('h1', null, 'Hello Rommel, this is JSX topic'))
+
+    // class - className
+    // for - htmlFor
+    // camelCase property naming - ex. onClick, tabIndex
 }
 
-export default Hello;
+export default Hello
