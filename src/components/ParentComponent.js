@@ -3,6 +3,7 @@ import ChildComponent from './ChildComponent' // method as props
 // methods as props
 // when passing methods as props to child, define the method in the parent component, pass the method on the child component as a prop, access the method using the props object in the child component
 
+
 class ParentComponent extends Component {
     constructor(props) {
         super(props)
