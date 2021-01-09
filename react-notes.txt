@@ -3,3 +3,5 @@ go to folder > npx create-react-app my-app > go inside the folder > npm start
 functional and class-based component - use functional based as much as possible
 
 ctrl + c to stop react
+
+npm i -g react-scripts > npm start to run the react file on a different computer

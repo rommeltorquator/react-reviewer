@@ -11,7 +11,7 @@ class ParentComponent extends Component {
              parentName: "Parent"
         }
 
-        // binding event handler
+        // binding event handler, third approach
         this.greetParent = this.greetParent.bind(this)
     }
 

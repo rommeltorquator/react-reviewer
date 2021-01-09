@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 
 class Welcome extends Component {
     render() {
+        // props destructuring inside class component
         const {name, heroName} = this.props
         // const {state1, state2} = this.state destructuring state
         return (

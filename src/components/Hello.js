@@ -2,6 +2,7 @@ import React from 'react';
 // JSX
 
 const Hello = () => {
+    // using JSX
     // return (
     //     <div>
     //         <h1>This is JSX topic</h1>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 // STATE, setState
 
-export class Message extends Component {
+class Message extends Component {
     constructor(props) {
         super(props)
     

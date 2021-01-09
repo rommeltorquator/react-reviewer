@@ -9,7 +9,7 @@ import React, { Component } from 'react'
 class EventBind extends Component {
     constructor(props) {
         super(props)
-    
+
         this.state = {
              message: "Hello"
         }
@@ -32,7 +32,7 @@ class EventBind extends Component {
         })
     }
     // onClick={this.clickHandler} also used in 4th approach inside the onClick
-    
+
     render() {
         // binding event handler is used to bind an event for state manipulation
         return (
