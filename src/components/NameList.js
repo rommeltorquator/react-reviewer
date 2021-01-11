@@ -2,7 +2,7 @@ import React from 'react'
 import Person from './Person' // child component, list rendering
 // LIST RENDERING, using map to render a component, lists and keys, index as key anti-pattern
 
-// keys are not accessible in the child components
+// keys are not accessible in the child components 
 
 // use index as a key when:
 // items on your list do not have a unique id

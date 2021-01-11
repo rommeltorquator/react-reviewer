@@ -22,12 +22,31 @@ import styles from './appStyles.module.css' // module css
 import Form from './components/Form'; // form handling basics, controlled component
 import LifecycleA from './components/LifecycleA'; // Component Mounting Lifecycle Methods, Component Updating Lifecycle Methods
 
+import Timer from './components/Timer'; // react lifecycle methods, componentDidMount
+import ZenQuote from './components/ZenQuote'; // loading data via ajax, axios, componentDidMount, adding animated loaders, componentDidUpdate
+import GithubUserInfo from './components/GithubUserInfo'; // loading data with async functions, componentDidMount
+
 // study lifecycle methods, mounting lifecycle methods
+
+import FragmentDemo from './components/FragmentDemo'; // fragments
+import Table from './components/Table'; // fragments
+import PureComp from './components/PureComp'; // pure component
+import ParentComp from './components/ParentComp'; // pure component, memo component
+import RefsDemo from './components/RefsDemo'; // refs, go back here
 
 function App() {
   return (
     <div className="App">
-      <LifecycleA />
+      {/* <RefsDemo /> */}
+      {/* <ParentComp /> */}
+      {/* <PureComp /> */}
+      {/* <Table /> */}
+      {/* <FragmentDemo /> */}
+      {/* <GithubUserInfo username='facebook' /> */}
+      {/* <GithubUserInfo username='colt' /> */}
+      {/* <ZenQuote /> */}
+      {/* <Timer /> */}
+      {/* <LifecycleA /> */}
       {/* <Form /> */}
       {/* <h1 className="error">Error</h1> */}
       {/* <h1 className={styles.success}>Success</h1> */}
@@ -62,4 +81,4 @@ function App() {
 }
 
 export default App;
-// video 25
+// video 28

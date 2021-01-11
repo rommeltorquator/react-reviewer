@@ -6,7 +6,7 @@ function FunctionClick() {
         console.log("Button clicked");
     }
 
-    // no parenthesis on clickHandler inside the onClick to avoid running the function  
+    // no parenthesis on clickHandler inside the onClick to avoid running the function
     return (
         <div>
             <button onClick={clickHandler}>Click</button>
