@@ -17,6 +17,7 @@ class ZenQuote extends Component {
         }
     }
     
+    // always fetch data inside the componentDidMount
     componentDidMount() {
         // load data, do it inside componentDidMount
         axios.get('https://api.github.com/zen').then(response => {

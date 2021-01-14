@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 
 class Timer extends Component {
     constructor(props) {
-        super(props)
-        console.log("In constructor")
+        super(props);
+        console.log("In constructor");
         this.state = {
              time: new Date()
         }
